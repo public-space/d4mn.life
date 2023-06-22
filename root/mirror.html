@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charsest="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+        <title>Mirror</title>
+    </head>
+    <body>
+        <div class="mirror"></div>
+        <style>
+            body {
+                background: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                overflow: hidden;
+            }
+    
+            .mirror {
+                position: relative;
+                width: 70%;
+                height: 70%;
+                border: 3px solid white;
+                border-radius: 5%;
+                box-sizing: border-box;
+            }
+    
+            .mirror:before {
+                content: '';
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
+                border: 3px solid rgba(255,255,255,0.8);
+                border-radius: 5%;
+                box-sizing: border-box;
+            }
+    
+            .mirror:after {
+                content: '';
+                position: absolute;
+                top: 20%;
+                left: 20%;
+                width: 60%;
+                height: 60%;
+                border: 3px solid rgba(255,255,255,0.6);
+                border-radius: 5%;
+                box-sizing: border-box;
+            }
+        </style>
+    </body>
+</html>

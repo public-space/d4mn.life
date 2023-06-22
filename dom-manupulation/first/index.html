@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM Manipulation</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center; 
+                background-image: linear-gradient(to bottom, navy, blue, aqua, teal, lime, green, yellow, orange, red);
+                padding: 20px;
+                margin: 20px;
+            }
+            .container {
+                padding: 10px;
+                margin: 10px;
+                border: 6px solid white;
+            }
+            #main-heading {
+                color: white;
+                font-size: 50px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px #000000;
+            }
+            .list-items {
+                list-style: none;
+                padding: 10px;
+                margin: 10px;
+                border: 6px solid rgb(229, 92, 92);
+                background-color: white;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body >
+        <header>
+            <h1 id="main-heading">DOM Manipulation</h1>
+            <h2>First Practice Along</h2>
+        </header>
+            <div class="container">
+                <h2 id="main-heading">Favorite Movies</h2>
+                <ul>
+                    <li class="list-items">
+                        Neo <span><br><br>
+                        The Matrix </span> 
+                    </li>
+                    <li class="list-items">Star Wars</li>
+                    <li class="list-items">Harry Potter</li>
+                    <li class="list-items">Marvel <br><br>Cinematic Universe</li>
+                    <li class="list-items">Lord of the Rings</li>
+                </ul>
+            </div>
+        <script src="app.js"></script>
+    </body>
+</html>
